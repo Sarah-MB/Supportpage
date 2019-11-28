@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SUPPORT SERVICES</title>
+        <style>
+            body{
+                background: #ffffff;
+                height: 100vh;
+                background-size: cover;
+            }
+            .toggle> span {
+    width: 30px;
+    height: 5px;
+    background: #11CDFC;
+    display: block;
+    margin: 5px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+
+
+  }
+
+
+
+
+  .btn-color{
+      background: #11CDFC;
+      color: white;
+  }
+  hr {
+      background-color: #11CDFC;
+
+  }
+
+  .hide {
+      position: absolute;
+      left: -100%;
+      transition: all 500ms linear;
+  }
+
+  .active{
+    left: 0%;
+    transition: all 500ms linear;
+  }
+
+  .bg, li {
+      z-index: 999;
+      background: #11CDFC;
+  }
+  .sm-hide {
+      display: none;
+  }
+
+
+
+  .center {
+      text-align: center;
+      padding-top: 10px;
+
+  }
+  ul li a  {
+      cursor: pointer;
+      text-decoration: none;
+
+  }
+
+  ul li :hover {
+      background: #11CDFC;
+      text-decoration: none;
+      background-size: 50px;
+      border-radius: 3px;
+  }
+  .relative {
+      position: relative;
+  }
+            .search-form{
+                margin-top: 15px;
+                float: right;
+                margin-right: 100px;
+              }
+              input{
+                padding: 7px;
+                margin-top: 2vh;
+                float: centre;
+                border: none;
+                font-size: 16px;
+                font-family: sans-serif;
+                background-color: #e4f8fd;
+              }
+              button{
+                float: right;
+                width: 175;
+                height: 59;
+                margin-top: 2vh;
+                background:rgb(8, 197, 211);
+                color: white;
+                border-radius: 0 5px 5px 0;
+                cursor: pointer;
+                position: relative;
+                padding: 7px;
+                font-family: sans-serif;
+                border: none;
+                font-size: 16px;
+                
+              }
+              h2{
+             text-align: center;
+             padding: 20px;
+         }
+         .register{
+            color: black;
+            margin: 0px 0px 0px 400px;
+            font-size: 18px;
+            padding: 20px;
+            border-radius: 10px;
+         }
+         #regiser{
+             margin-left: 50px;
+             
+         }
+         label{
+             color: black;
+             font-family: sans-serif;
+             font-size: 12px;
+             font-weight: bold;
+         }
+         #name{
+            width: 500px; 
+            height: 25px; 
+            padding: 5px;
+            background-color: #e4f8fd;
+         }
+         #contact{
+            width: 500px; 
+            height: 25px; 
+            outline: 0; 
+            padding: 5px;
+            background-color: #e4f8fd;
+         }
+         #title{
+            width: 500px; 
+            height: 25px; 
+            outline: 0; 
+            padding: 5px;
+            background-color: #e4f8fd;
+         }
+         #message{
+            width: 500px; 
+            height: 25px; 
+            outline: 0; 
+            padding: 5px;
+            background-color: #e4f8fd;
+         }
+         #sub{
+            background-color: green;
+            color: white;
+            width: 100px;
+            padding: 7px;
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: 600;
+            border: none;
+            border-radius: 3px;
+         }
+        </style>
+    </head>
+    <body>
+            <nav>
+                    <image class="mr-auto" src="https://res.cloudinary.com/sima-inc/image/upload/v1573594174/VAR/image/logo_ussmqj.jpg" width="200" height="80"></image>
+                    <div class="search-form">
+                    <form class ="search-form">
+                        <input type="text" placeholder ="Search for services.....">
+                    <button>SEARCH</button>
+                  </form>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                    <div class=" col-1 toggle " onclick="toggler()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                   </div>
+                   <div class="col-11">
+                       <hr>
+                   </div>
+                </div>
+                <div class="row">
+                    <div class="col control hide bg">
+                        <ul class="list-group list-group-flush text-center text-uppercase bg ">
+                            <li  class="list-group-item"><a href="#">Home</a></li>
+                            <li  class="list-group-item"><a href="#">Lorem</a></li>
+                            <li  class="list-group-item"><a href="#">Ipsum</a></li>
+                            <li  class="list-group-item"><a href="#">Leret</a></li>
+                        </ul>
+                    </div>
+                </div>
+               </div>
+               
+                <h2>SUPPOR SERVICEST</h2>
+                <div class="register">
+                    <form method="post" id="register" action>
+                        <label>NAME</label><br>
+                        <input type="text" name="fname" id="name" placeholder=""><br><br>
+                        <label>CONTACT</label><br>
+                        <input type="text" name="fname" id="contact" placeholder=""><br><br>
+                        <label>TITLE</label><br>
+                        <input type="text" name="fname" id="title" placeholder=""><br><br>
+                        <label>MESSAGE</label><br>
+                        <input type="text" name="fname" id="message" placeholder=""><br><br>
+
+                        <div class="pull-left">
+                        </div>
+                        <input type="submit" class="btn pull-center sc-contact-submit" value="SEND" id="sub">
+                    </form>
+                </div>
+        </script>
+            </body>
+        </html>
